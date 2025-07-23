@@ -94,11 +94,11 @@ def cellLabelServer = new LabeledImageServer.Builder(imageData)
     .downsample(downsample)    // Choose server resolution; this should match the resolution at which tiles are exported    
     .multichannelOutput(false) // If true, each label refers to the channel of a multichannel binary image (required for multiclass probability)
     .build()
-def annotationLabelServer = new LabeledImageServer.Builder(imageData)
-    .backgroundLabel(0, ColorTools.WHITE) // Specify background label (usually 0 or 255)
-    .downsample(downsample)    // Choose server resolution; this should match the resolution at which tiles are exported    
-    .multichannelOutput(false) // If true, each label refers to the channel of a multichannel binary image (required for multiclass probability)
-    .build()
+//def annotationLabelServer = new LabeledImageServer.Builder(imageData)
+//    .backgroundLabel(0, ColorTools.WHITE) // Specify background label (usually 0 or 255)
+//    .downsample(downsample)    // Choose server resolution; this should match the resolution at which tiles are exported    
+//    .multichannelOutput(false) // If true, each label refers to the channel of a multichannel binary image (required for multiclass probability)
+//    .build()
 
 
 
